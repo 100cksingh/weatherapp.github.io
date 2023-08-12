@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFE0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    background-color: #FF7F50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    /* Set the width to a percentage for responsiveness */
+    max-width: 400px;
+    /* Set a maximum width to prevent the container from becoming too wide */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    /* Add some spacing below the input field */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-top: 20px;
+    display: none;
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .weather-container {
+        width: 90%;
+        /* Adjust the width for smaller screens */
+    }
+}
